@@ -1,0 +1,136 @@
+.nunito-normal {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.HomepageMain {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.HomepageMainBody p {
+    margin: 0px;
+}
+.LogoContainer {
+    min-height: 30vh;
+    line-height: 30vh;
+    background-color: wheat;
+    text-align: center;
+}
+.LogoContainer p {
+    font-size: 10vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ProjectsContainer {
+    margin: 10px auto;
+    background-color: #a9f2cd;
+    height: 120px;
+    width: 95vw;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.ExploreContainer {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 95vw;
+    overflow: auto;
+}
+
+.Card {
+    height: 100px;
+    width: 100px;
+    margin: 0px 0px 0px 8px;
+    border-radius: 24px;
+    display: block;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+}
+.Card img {
+    background-color: #00a474;
+    border-radius: 50%;
+    object-fit: contain;
+    max-width: 70%;
+}
+.Card:hover {
+    cursor: pointer;
+}
+
+.ExploreCard {
+    border-radius: 16px;
+    margin: 8px;
+    padding: 16px;
+    width: 200px;    
+    height: 300px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    background-color: lightblue;
+    transition: width 0.3s ease;
+    text-align: left;
+}
+.ExploreCard .contents img {
+    width: 50px;
+}
+.contentNameAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.exploreButton {
+    display: flex;
+    max-height: 40px;
+}
+.exploreButton img {
+    max-width: 32px;
+    height: 32px;
+    background-color: #1967d2;
+    border-radius: 50px;
+    margin: 4px 0px 0px 4px;
+}
+.exploreButton p {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.ExploreCard:hover{
+    width: 300px
+}
+.ExploreCard:hover .contentNameAndButton {
+    display: block;
+}
+.ExploreCard:hover .exploreButton {
+    align-items: center;
+    background-color: #1967d2;
+    padding: 8px;
+    color: white;
+    border-radius: 25px;
+    animation-name: animate-fade;
+}
+.ExploreCard:hover .exploreButton p {
+    display:block;
+    animation-duration: 1s;
+    animation-name: animate-fade;
+}
+.exploreButton:hover {
+    cursor: pointer;
+}
+
+@keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

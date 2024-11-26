@@ -1,0 +1,194 @@
+.noto-sans-normal {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+p {        
+    font-family: 'Noto Sans', sans-serif;
+}  
+
+button:hover {
+    cursor: pointer;
+}
+
+.EQL {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.EQLBody {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+.EQLBody h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.PlaySelector {
+    height: 80px;
+    width: 300px;
+    background-color: rgba(154, 154, 154, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.PlaySelector:hover {
+    cursor: pointer;
+}
+.PlaySelector p {
+    font-weight:500;
+}
+.PlaySelector p:nth-child(1),
+.PlaySelector p:nth-child(3) {
+    border: 2px solid darkolivegreen;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.PlayDisplay {
+    width: 500px;
+    padding: 16px;
+    margin: 16px;
+    color: #303234 ;
+    background-color: rgb(216, 221, 230) ;
+    vertical-align: top;
+    border-radius: 16px;
+}
+.timer {
+    float: left;
+    width: 80px;
+    text-align: left;
+    padding: 4px;
+    margin: 0px;
+    box-shadow: 4px 4px 8px;
+    border-radius: 8px;
+    background-color: #fdfd96 ;
+}
+.score {
+    float: right;
+    width: 120px;
+    padding: 4px;
+    margin: 0px;
+    box-shadow: 4px 4px 8px;
+    border-radius: 8px;
+    background-color: #87ceeb;
+}
+.question {
+    font-family: 'Noto sans';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 30px;
+    clear: both;
+}
+.AnswerInput {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3 ease-in-out;
+    border: none;
+}
+.AnswerInput:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+.ControlButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.HintButton {
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 24px;
+    flex: 0 0 33%;
+    font-family: 'Noto Sans', sans-serif
+}
+.SubmitButton {
+    flex: 0 0 66%;
+    border-radius: 50px;
+    font-size: 24px;
+    background-color: #3cb371;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    border: none;
+}
+
+.gameOverDisplay {
+    margin: 16px;
+    padding: 16px;
+    width: 500px;
+    background-color: rgb(216, 221, 230) ;
+    border-radius: 16px;
+}
+.hidden {
+    display: none;
+}
+.gameOverDisplay p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 32px;
+}
+.gameOverDisplay button {
+    width: 80%;
+    border-radius: 25px;
+    border: transparent;
+    background-color: #87cefa;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.BottomSection {
+    width: 100%;
+    position: absolute;
+    bottom: -600px;
+    left: 0;
+}
+.DataTableHeading {
+    width: 100%;
+    height: 50px;
+    background-color: #282a35;
+    color: white;
+    text-align: center;
+}
+.DataTableHeading h4 {
+    font-family: 'Noto Sans';
+    padding: 8px;
+    font-size: 20px;
+}
+.DataTable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: #282a35;
+}
+
+.ElementCard {
+    color: black;
+    background-color: #f0e68c;
+    border-radius: 16px;
+    width: 20%;
+    height: 120px;
+    padding: 4px;
+    margin: 12px;
+}

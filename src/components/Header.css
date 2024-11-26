@@ -1,0 +1,74 @@
+.noto-sans-normal {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+.Header {
+    background-color: gray;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 100px;
+    width: 100vw;
+}
+.Header p {
+    float: left;
+    color: darkslategray;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 14px 16px;
+    margin-left: 8px;
+}
+@media (max-width: 750px) {
+    .Header a {
+        display:none
+    }
+}
+@media(min-width: 751px) {
+    .Header button {
+        display:none
+    }
+}
+.Header a {
+    max-width: 90vw;
+    float: right;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin: 20px;
+}
+.Header button {
+    float: right;
+    background-color: transparent;
+    border: transparent;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: 'Noto Sans';
+    padding: 14px 16px;
+    margin: 20px;
+}
+.Header a:hover .Header button:hover{
+    cursor: pointer;
+    background-color: wheat;
+    color: black;
+}
+
+.Header a:hover {
+    cursor: pointer;
+    background-color: wheat;
+    color: black;
+}
+
+.Header p:hover {
+    cursor: pointer;
+    background-color: wheat;
+    color: black;
+}
